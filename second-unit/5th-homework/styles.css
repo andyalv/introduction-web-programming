@@ -1,0 +1,40 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.card {
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+    display: block;
+}
+
+.card h2 , .card p {
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin: 10px auto;
+}
+
+.card p {
+    width: 80%;
+}
+
+button {
+    background-color: #006d60;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
