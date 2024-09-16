@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0px auto;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+
+.container__left {
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.container__left img {
+    width: 100%;
+}
+
+.container__right {
+    background-color: #f6f7f9;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 70%;
+    padding: 60px;
+    max-height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container__right strong {
+    font-size: 0.75em;
+    display: block;
+    color: #333;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.container__right button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input__container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f6f7f9;
+    border-radius: 5px;
+}
+
+.input__container:focus-within {
+    outline: none;
+    border: 1px solid #333;
+}
+
+.input__container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: transparent;
+}
+
+.input__container input:focus {
+    outline: none;
+    border: none;
+}
+
+.input__container span {
+    color: #333;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.divider hr {
+    width: 45%;
+    border: 1px solid #333;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.social__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.social__icon img {
+    width: 30px;
+    margin: 5px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
