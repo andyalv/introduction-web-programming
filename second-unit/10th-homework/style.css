@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.logo__img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.container__left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__left__elements {
+    max-width: 400px;
+}
+
+.container__left p {
+    color: #5a5a5a;
+}
+
+.continue__button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container__input--signin {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input__selection--signin {
+    background-color: #eeedf0;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 3px 3px;
+}
+
+.input__selection--signin button {
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.input__selection--signin button:nth-child(1) {
+    background-color: #fff;
+}
+
+.container__email {
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: #eeedf0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.input__email {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 4px;
+}
+
+.input__email span {
+    color: #5a5a5a;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input__email--right {
+    border-left: 1px solid #8e8e8e;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.input__email--right label {
+    font-size: 0.7em;
+    color: #5a5a5a;
+}
+
+.input__email--right input {
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.input__email--right input:focus {
+    outline: none;
+}
+
+.divider {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider hr {
+    width: 33%;
+    border: 1px solid #333;
+}
+
+.divider span {
+    color: #5a5a5a;
+    padding: 0 10px;
+    font-size: 0.9em;
+}
+
+.container__social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container__social a > img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
+
+.container__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.container__right svg {
+    width: 100%;
+    height: 100%;
+}
