@@ -1,0 +1,104 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+
+    <!-- Google Links -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav class="timer__container">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </nav>
+
+    <main class="todo">
+        <h1>Lista de tareas</h1>
+        <div class="input__container">
+            <input class="todo-input" id="todo-input">
+            <button class="add-btn" id="add-btn">
+                <span class="material-symbols-outlined add-cicle">
+                    add_circle
+                </span>
+            </button>
+        </div>
+
+        <div class="todo-list__container">
+            <ul class="todo-list" id="todo-list">
+                <!--<li>
+                    !-- Check button --
+                    <button class="check-btn">
+                        <span class="material-symbols-outlined">
+                            radio_button_unchecked
+                        </span>
+                    </button>
+
+                    !-- Info container --
+                    <div class="info__container">
+                        <span class="todo-title">
+                            Descripción de la tarea
+                        </span>
+                        <span class="text-muted">07/10/2024</span>
+                    </div>
+
+                    !-- Buttons container --
+                    <div class="buttons__container">
+                        !-- Edit button --
+                        <button class="edit-btn">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span> 
+                        </button>
+
+                        !-- Delete button --
+                        <button class="delete-btn">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </button>
+                    </div>
+                </li>-->
+
+                <!-- <li>
+                    !-- Check button --
+                    <button class="check-btn">
+                        <span class="material-symbols-outlined">
+                            radio_button_unchecked
+                        </span>
+                    </button>
+
+                    !-- Info container --
+                    <div class="info__container">
+                        <input type="text" class="todo-title">
+                        <span class="text-muted">07/10/2024</span>
+                    </div>
+
+                    !-- Buttons container --
+                    <div class="buttons__container">
+                        !-- Edit button --
+                        <button class="edit-btn">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span> 
+                        </button>
+
+                        !-- Delete button --
+                        <button class="delete-btn">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <button class="clear-btn" id="clear-btn">Clear All</button>
+    </main>
+  <script src="index.js"></script>
+</body>
+
+</html>

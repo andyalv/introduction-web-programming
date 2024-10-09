@@ -1,0 +1,259 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --dark-grey: #828080;
+    --grey: #2222;
+    --green: #4caf50;
+    --light-red: #fdb0b0;
+    --red: #f44336;
+    --dark-red: #d32f2f;
+    --light-blue: #2196f3;
+
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-muted {
+    color: var(--dark-grey);
+    font-size: 0.8rem;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 25px;
+}
+
+.checked {
+    background-color: #d1cfe1;
+}
+
+.todo-title {
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+}
+
+.todo-title:focus {
+    outline: none;
+}
+
+.todo-title--checked {
+    text-decoration: line-through;
+}
+
+.input__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    padding: 5px; 
+}
+
+.input__container:focus-within {
+    border: 1px solid var(--black);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+
+.todo-input:focus {
+    outline: none;
+}
+
+.add-btn {
+    padding: 10px;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.todo-list__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.todo-list li span {
+    width: 80%;
+}
+
+.delete-btn {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--red);
+    color: var(--white);
+
+    max-width: 50px;
+}
+
+.delete-btn:hover {
+    background-color: var(--dark-red);
+}
+
+.check-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    max-width: 50px;
+
+    background-color: transparent;
+    color: var(--black);
+}
+
+.check-btn span {
+    font-size: 1rem;
+    margin-left: 1px;
+    padding: 3px;
+}
+
+.check-btn--checked {
+    background-color: #9dadcc;
+    color: var(--white);
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10px;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.info__container span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 250px;
+}
+
+
+.edit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--light-blue);
+    color: var(--white);
+
+    max-width: 50px;
+}
+
+.buttons__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.incomplete {
+    background-color: var(--light-red);
+}
+
+.timer__container {
+    width: 100%;
+    background-color: var(--white);
+    padding: 15px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer__container span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.clear-btn {
+    padding: 10px;
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}
