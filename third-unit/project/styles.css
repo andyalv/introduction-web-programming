@@ -1,0 +1,338 @@
+:root {
+    --background-color--highlight: #f3ebe5;    
+    --background-color--primary: #fbf8f6;
+    
+    --light-gray: #f1f1f1;
+    --gray: #ccc;
+    --dark-gray: #333;
+    
+    --software-color: #f1c5c5;
+    --business-color: #fae0c1;
+    --media-training-color: #d5d2fe;
+    --interior-design-color: #bff0db;
+    
+    --font-family: "Poppins", sans-serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: var(--font-family); 
+    background-color: var(--background-color--primary);
+    padding: 20px;
+    gap: 20px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.img--small-round {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.img--medium-round {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--background-color--highlight);
+
+    border-radius: 15px;
+    height: 100%;
+}
+
+.cart__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.main-btn {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main__links {
+    list-style: none;
+}
+
+.settings__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.courses__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.course-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: var(--background-color--highlight);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 140px;
+    height: 60px;
+    padding-right: 30px;
+}
+
+.course__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.course__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 15px;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.course__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-title-btn {
+    display: flex;
+    align-items: center;
+}
+
+.course__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enclosed-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    max-height: 15px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color--highlight);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.profile__settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.profile__activities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.activity__time {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#activity-time {
+    font-size: 0.8rem;
+    border-radius: 25px;
+    padding: 3px;
+    border: var(--gray) 1px solid;
+}
+
+.profile__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 9px;
+}
+
+.friend__images {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.content__scroll, .profile__courses {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    border-radius: 10px;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+    gap: 10px;
+}
+
+.teachers__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity__spent-time {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.three-img__group img:nth-child(1) {
+    width: 30px;
+    height: auto;
+}
+
+.three-img__group img:nth-child(2) {
+    width: 35px;
+    height: auto;
+    margin-left: -7px;
+    margin-bottom: 30px;
+}
+
+.three-img__group img:nth-child(3) {
+    width: 40px;
+    height: auto;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+
+.two-img__group img:nth-child(1) {
+    width: 35px;
+    height: auto;
+}
+
+.two-img__group img:nth-child(2) {
+    width: 45px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: -7px;
+}
+
+.business {
+    background-color: var(--business-color);
+}
+
+.software {
+    background-color: var(--software-color);
+}
+
+.media-training {
+    background-color: var(--media-training-color);
+}
+
+.interior-design {
+    background-color: var(--interior-design-color);
+}
+
+.text-highlight {
+    background-color: var(--background-color--highlight);
+    padding: 7px;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.nostyle-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
