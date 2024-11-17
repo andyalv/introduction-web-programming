@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+}
+
+:root {
+	--font-family: 'Poppins', sans-serif;
+
+	/*Color palette*/
+	--yellow: #FFF7D1;
+	--beige: #FFECC8;
+	--orange: #FFD09B;
+	--peach: #FFB0B0;
+}
+
+body {
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+
+	font-family: var(--font-family);
+}
+
+h1 {
+	font-style: italic;
+}
+
+.muted {
+	color: #3f3f3f;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content {
+	background-color: var(--beige);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.form-input__container {
+	gap: 8px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	padding: 4px;
+	border-radius: 10px;
+	border: none;
+
+	font-size: 16px;
+}
+
+select {
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--peach);
+}
+
+button {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--orange);
+}
